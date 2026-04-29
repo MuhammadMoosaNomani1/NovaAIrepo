@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NovaAI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="chat-container">
+
+    <div class="chat-header">
+        NovaAI
+    </div>
+
+    <div id="chatBox" class="chat-box"></div>
+
+    <div class="input-area">
+        <input id="input" placeholder="Type a message..." 
+        onkeydown="if(event.key==='Enter') sendMessage()" />
+        <button onclick="sendMessage()">➤</button>
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
